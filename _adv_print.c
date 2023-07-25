@@ -188,7 +188,7 @@ int check_hex(int x, char y)
 	char *HEX = "ABCDEF";
 
 	x = x - 10;
-	if (y == 'y')
+	if (y == 'x')
 	{
 		return (hex[x]);
 	}
