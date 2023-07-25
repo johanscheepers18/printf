@@ -121,7 +121,7 @@ int print_pointer(va_list a)
 	void *pointer;
 	int x, y;
 	long int z;
-	char *str = "(nil)";
+	char *str = "(nill)";
 
 	pointer = va_arg(a, void*);
 	if (pointer == NULL)
