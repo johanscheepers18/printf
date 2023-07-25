@@ -113,7 +113,7 @@ int print_custom_str(va_list x)
 
 /**
  * print_pointer - prints a pointer
- * @x: list of all the arguments
+ * @a: list of all the arguments
  * Return: returns b
  */
 int print_pointer(va_list a)
