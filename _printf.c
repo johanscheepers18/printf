@@ -74,6 +74,9 @@ int _printf(const char *format, ...)
 		{"i", print_int},
 		{"u", print_unsigned_int},
 		{"b", print_bin},
+		{"o", print_oct},
+		{"x", print_hex},
+		{"X", print_HEX},
 		{NULL, NULL}
 	};
 
