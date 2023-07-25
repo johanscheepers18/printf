@@ -39,13 +39,13 @@ int comp(const char *format, print format_list[], va_list al)
 			if (format_list[y].symbol == NULL && format[x + 1] != ' ')
 			{
 				if (format[x + 1] != '\0')
+				{
 					_putchar(format[x]);
 					_putchar(format[x + 1]);
 					len = len + 2;
-				else
-				{
-					return (-1);
 				}
+				else
+					return (-1);
 			}
 			x = x + 1;
 		}
