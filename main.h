@@ -4,11 +4,16 @@
 #include <stdarg.h>
 #include <unistd.h>
 
+/**
+ * struct printer - this struct is used for all functions
+ * @symbol: the symbol that is found in the string
+ * @func: the function to be used
+ */
 typedef struct printer
 {
 	char *symbol;
 	int (*func)(va_list);
-}print;
+} print;
 
 int _printf(const char *format, ...);
 int comp(const char *format, print format_list[], va_list al);
