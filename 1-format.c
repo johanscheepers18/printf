@@ -46,7 +46,7 @@ int print_custom_str(va_list x)
 	int w, y = 0, z;
 	char *str;
 
-	str = va_arg(w, char *);
+	str = va_arg(x, char *);
 	if (str == NULL)
 	{
 		str = "(null)";
