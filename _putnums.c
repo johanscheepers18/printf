@@ -37,7 +37,7 @@ int _putnum(va_list x)
 		j /= 10;
 	}
 
-	return (y);
+	return (k);
 }
 
 /**
