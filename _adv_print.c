@@ -3,7 +3,7 @@
 /**
  * print_bin - prints a number in binary form
  * @c: number to be used
- * Returns: the length of the number
+ * Return: the length of the number
  */
 int print_bin(va_list c)
 {
@@ -134,7 +134,7 @@ int print_hex(va_list x)
 }
 
 /**
- * print_hex - print in uppercase base16
+ * print_HEX - print in uppercase base16
  * @x: list of all arguments
  * Return: returns the number of chars to be printed
  */
