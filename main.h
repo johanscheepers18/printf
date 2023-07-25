@@ -38,6 +38,6 @@ void _putbase(char *x);
 char *memory_copy(char *a, char *b, unsigned int x);
 int check_hex(int x, char y);
 int print_custom_hex(unsigned int z);
-int print_custom_HEX(unsigned int x);
+int print_custom_HEX(unsigned long int x);
 
 #endif

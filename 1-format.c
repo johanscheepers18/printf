@@ -41,10 +41,10 @@ int print_custom_hex(unsigned int z)
  * @x: list of arguments
  * Return: returns the amount
  */
-int print_custom_HEX(unsigned int x)
+int print_custom_HEX(unsigned long int x)
 {
-	int i, *arr, amount = 0;
-	unsigned int x1 = x;
+	long int i, *arr, amount = 0;
+	unsigned long int x1 = x;
 
 	while (x / 16 != 0)
 	{
@@ -52,7 +52,7 @@ int print_custom_HEX(unsigned int x)
 		amount++;
 	}
 	amount++;
-	arr = malloc(amount * sizeof(int));
+	arr = malloc(amount * sizeof(long int));
 
 	for (i = 0; i < amount; i++)
 	{
@@ -121,7 +121,7 @@ int print_pointer(va_list a)
 	void *pointer;
 	int x, y;
 	long int z;
-	char *str = "(nill)";
+	char *str = "(nil)";
 
 	pointer = va_arg(a, void*);
 	if (pointer == NULL)
