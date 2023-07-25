@@ -27,20 +27,21 @@ int comp(const char *format, print format_list[], va_list al)
 		{
 			for (y = 0 ; format_list[y].symbol != NULL ; y++)
 			{
-				z = format_list[y].func(al);
-				if (z == -1)
-					return (-1);
-				len += z;
-				break;
+				if (format[x + 1] == format_list[y].symbol[0])
+				{
+					z = format_list[y].func(al);
+					if (z == -1)
+						return (-1);
+					len += z;
+					break;
+				}
 			}
 			if (format_list[y].symbol == NULL && format[x + 1] != ' ')
 			{
 				if (format[x + 1] != '\0')
-				{
 					_putchar(format[x]);
 					_putchar(format[x + 1]);
 					len = len + 2;
-				}
 				else
 				{
 					return (-1);
@@ -64,7 +65,7 @@ int comp(const char *format, print format_list[], va_list al)
  */
 int _printf(const char *format, ...)
 {
-	unsigned int strlen;
+	int strlen;
 	print format_list[] = {
 		{"c", print_chr},
 		{"s", print_str},
