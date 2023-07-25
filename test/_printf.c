@@ -77,6 +77,7 @@ int _printf(const char *format, ...)
 		{"o", print_oct},
 		{"x", print_hex},
 		{"X", print_HEX},
+		{"S", print_custom_str},
 		{NULL, NULL}
 	};
 
